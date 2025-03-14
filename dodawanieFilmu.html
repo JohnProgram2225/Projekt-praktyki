@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baza filmów</title>
+    <link rel="shortcut icon" href="movie.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <div id="TopLeft">
+                <a href="index.html"><img src="movie.png" alt="logo" width="60" height="60"></a>
+                <a href="index.html"><button type="button" class="btn btn-light">Baza filmów</button></a>
+                <a href="o-nas.html"><button type="button" class="btn btn-light">O nas</button></a>
+                <a href="kontakt.html"><button type="button" class="btn btn-light">Kontakt</button></a>
+            </div>
+
+            <div id="TopRight">
+                <a class="icon-link icon-link-hover" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="dodawanieFilmu.html">
+                    <button type="button" class="btn btn-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload" viewBox="0 0 16 16">
+                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                        <path d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z"/>
+                      </svg>
+                      &nbsp;Dodaj film
+                    </button>
+                  </a>
+            </div>
+
+        </header>
+
+        <div class="container mt-4 search-div">
+            <div class="d-flex justify-content-center mt-3">
+                <h1 class="fw-bold">Dodaj film</h1>
+            </div>
+        </div>
+
+        <main>
+            <div class="container">
+                <form action="">
+                    <label for="title">Tytuł: </label><br>
+                    <input type="text" name="nowy film" id="title" required><br><br>
+                    <label for="image">Link do zdjęcia: </label><br>
+                    <input type="url" name="image" id="image" placeholder="https://example/img/nazwa.jpg" pattern="https://.*" size="30" required><br><br>
+                    <label for="prodYear">Rok produkcji: </label><br>
+                    <input type="number" name="nowy film" id="prodYear" min="1900" max="2099" step="1" value="2025" required ><br><br>
+                    <label for="category1">Kategorie:</label><br>
+                    <select name="category1" id="category1">
+                        <option value="Akcja">Akcja</option>
+                        <option value="Dramat">Dramat</option>
+                        <option value="Komedia">Komedia</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                    </select>
+                    <select name="category2" id="category2">
+                        <option value="Akcja">Akcja</option>
+                        <option value="Dramat">Dramat</option>
+                        <option value="Komedia">Komedia</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                    </select><br><br>
+                    <label for="description">Opis:</label><br>
+                    <textarea name="description" id="description"></textarea><br><br>
+                    <label for="awards">Nagrody: </label><br>
+                    <input type="text" name="award1" id="award1"><br><br>
+                    <input type="text" name="award2" id="award2"><br><br>
+                    <input type="text" name="award3" id="award3"><br><br>
+                    <input type="text" name="award4" id="award4"><br><br>
+                    <input type="text" name="award5" id="award5"><br><br>
+                    <button type="submit" class="btn btn-primary">Dodaj film</button>
+                </form>
+            </div>
+        </main>
+
+        <footer class="container mt-4">
+            <br><br><br>
+            <hr>
+    
+            <div id="BottomLeft">
+                <a href="index.html" id="BazaFilmow"><h6>Baza filmów</h6></a><br>
+                <a href="facebook.com"><i class="bi bi-facebook"></i></a> &nbsp;
+                <a href="instagram.com"><i class="bi bi-instagram"></i></a> &nbsp;
+                <a href="x.com"><i class="bi bi-twitter-x"></i></a><br>
+                Stronę wykonali: uczniowie technikum
+            </div>
+    
+            <div id="BottomRight">
+            <a href="o-nas.html"><button type="button" class="btn btn-link">O nas</button></a><br>
+            <a href="kontakt.html"><button type="button" class="btn btn-link">Kontakt</button></a><br>
+            </div>
+    
+        </footer>
+
+    </div>
+    
+</body>
+</html>

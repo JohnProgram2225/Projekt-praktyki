@@ -1,0 +1,147 @@
+body{
+    overflow-y: scroll;
+}
+
+header{
+    margin-top: 20px;
+}
+
+#TopLeft{
+    float: left;
+}
+#TopRight{
+    float: right;
+}
+.search-div{
+    clear: both;
+}
+.search-bar {
+    background-color: #f8f9fa !important; 
+    border-radius: 20px;
+    max-width: 400px;
+    position: relative;
+}
+
+.search-bar input {
+    border-radius: 20px !important;
+    background-color: #f8f9fa !important; 
+    border: none; 
+}
+
+.search-bar input:focus {
+    border-radius: 20px !important;
+    background-color: #f8f9fa !important; 
+    box-shadow: none !important; 
+    outline: none !important; 
+}
+
+.search-bar .input-group-text {
+    border-radius: 20px !important;
+    background-color: #f8f9fa !important; 
+    border: none;
+}
+.dropdown {
+    position: relative; 
+}
+
+#categoryList {
+    clear: both;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 150px;
+    z-index: 9999; 
+    display: none;
+    border: 2px solid black;
+}
+
+
+#categoryList a {
+    display: block;
+    padding: 8px 12px;
+    text-decoration: none;
+    color: black;
+}
+
+#categoryList a:hover {
+    background-color: #f0f0f0;
+}
+
+
+#lens{
+    border: none;
+    background-color: #f8f9fa;
+}
+
+
+
+main{
+    margin-top: 5%;
+}
+.OddMovies{
+    float: left;
+}
+
+
+.OddMovieDesc{
+    float: right ;
+}
+
+.EvenMovies{
+    clear: both;
+    float: right;
+}
+.EvenMoviesDesc{
+    float: left;
+}
+
+.Movies {
+    text-decoration: none;
+    color: inherit;
+}
+
+.rating input {
+    display: none;
+}
+.rating label {
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+}
+.rating input:checked ~ label {
+    color: gold;
+}
+.oceny{
+    clear: both;
+    text-align: center;
+}
+footer{
+    clear: both;
+    
+}
+
+#BottomLeft{
+    clear: both;
+    float: left;
+}
+#BazaFilmow{
+    text-decoration: none;
+    color: inherit;
+}
+
+#BottomRight{
+    float: right;
+}
+
+.MoviePhotos{
+    width: 100%;
+    height: 50%;
+}
+#description{
+    width: 30%;
+
+}
