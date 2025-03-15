@@ -82,10 +82,20 @@ header{
 main{
     margin-top: 5%;
 }
+
+
 .OddMovies{
     float: left;
 }
-
+.MovieH5{
+    float: left;
+}
+.MovieControls{
+    float: right;
+    border: none;
+    background-color: white;
+    margin: 1%;
+}
 
 .OddMovieDesc{
     float: right ;
@@ -145,3 +155,4 @@ footer{
     width: 30%;
 
 }
+
