@@ -113,6 +113,9 @@ main{
     text-decoration: none;
     color: inherit;
 }
+.UserRatings{
+    color: gold;
+}
 
 .rating input {
     display: none;
