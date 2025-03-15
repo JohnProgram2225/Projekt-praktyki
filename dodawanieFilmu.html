@@ -47,24 +47,44 @@
                 <form action="">
                     <label for="title">Tytuł: </label><br>
                     <input type="text" name="nowy film" id="title" required><br><br>
-                    <label for="image">Link do zdjęcia: </label><br>
-                    <input type="url" name="image" id="image" placeholder="https://example/img/nazwa.jpg" pattern="https://.*" size="30" required><br><br>
+                    <label for="image">Zdjęcie: </label><br>
+                    <input type="file" name="image" id="image" placeholder="https://example/img/nazwa.jpg" pattern="https://.*" size="30" required><br><br>
                     <label for="prodYear">Rok produkcji: </label><br>
                     <input type="number" name="nowy film" id="prodYear" min="1900" max="2099" step="1" value="2025" required ><br><br>
                     <label for="category1">Kategorie:</label><br>
                     <select name="category1" id="category1">
-                        <option value="Akcja">Akcja</option>
+                        <option value="Akcja">Akcja</option> 
                         <option value="Dramat">Dramat</option>
                         <option value="Komedia">Komedia</option>
                         <option value="Horror">Horror</option>
                         <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Przygodowy">Przygodowy</option>
+                        <option value="Animacja">Animacja</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Romans">Romans</option>
+                        <option value="Dokumentalny">Dokumentalny</option>
+                        <option value="Musical">Musical</option>
+                        <option value="Historyczny">Historyczny</option>
+                        <option value="Western">Western</option>
+                        <option value="Kryminał">Kryminał</option>
                     </select>
                     <select name="category2" id="category2">
-                        <option value="Akcja">Akcja</option>
+                        <option value="Akcja">Akcja</option> 
                         <option value="Dramat">Dramat</option>
                         <option value="Komedia">Komedia</option>
                         <option value="Horror">Horror</option>
                         <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Przygodowy">Przygodowy</option>
+                        <option value="Animacja">Animacja</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Romans">Romans</option>
+                        <option value="Dokumentalny">Dokumentalny</option>
+                        <option value="Musical">Musical</option>
+                        <option value="Historyczny">Historyczny</option>
+                        <option value="Western">Western</option>
+                        <option value="Kryminał">Kryminał</option>
                     </select><br><br>
                     <label for="description">Opis:</label><br>
                     <textarea name="description" id="description"></textarea><br><br>
